@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .account{
+        @apply w-screen flex flex-row justify-center
+    }
+    .account div{
+        @apply w-[80%] md:w-[50%] lg:w-[40%] flex flex-col items-center bg-gray-50 shadow mt-[30px] rounded-lg
+    }
+    .account h1{
+        @apply my-[30px] text-lg font-bold text-gray-800
+    }
+    .account input{
+        @apply w-[80%] my-[10px] h-[40px] px-[14px] rounded-full focus:outline-blue-300
+    }
+    .account button{
+        @apply text-white w-[80%] rounded-full h-[40px] mt-[30px]
+    }
+    .account a{
+        @apply mb-[20px] mt-[4px] text-sm underline text-slate-600
+    }
+    .account p{
+        @apply text-red-500 font-bold text-sm
+    }
+}
